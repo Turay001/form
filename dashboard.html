@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Load Tailwind CSS for utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensures Inter font is used */
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body>
+    <div class="container bg-white card rounded-xl p-8 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-indigo-600 mx-auto mb-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0A8.966 8.966 0 0 0 12 12.75a8.966 8.966 0 0 0-5.982 5.975M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </svg>
+
+        <h1 id="user-greeting" class="text-4xl font-extrabold text-gray-900 mb-2">Welcome!</h1>
+        <p class="text-lg text-gray-600 mb-8">You are successfully logged in to your dashboard.</p>
+
+        <button id="logout-button" class="bg-red-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-600 transition duration-150 ease-in-out">
+            Log Out
+        </button>
+    </div>
+
+    <!-- Load Frontend Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
